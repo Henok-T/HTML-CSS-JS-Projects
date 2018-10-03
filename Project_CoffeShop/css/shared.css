@@ -17,7 +17,7 @@ body{
     margin: 0;
     font:2em 'Helvetica Neue', Helvetica, Calibri, sans-serif;
     line-height:1.42857143;
-    background: #3e606f;
+    background: #e9eded;
     overflow-x: hidden;
 }
 
@@ -324,21 +324,194 @@ hr{
 	transform: scale(2);
 }
 /*=======================================
-  flex-container STYLES
+  container STYLES
   =======================================*/
 
+  container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  .container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .row {
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+  
+  .clearfix:after,
+  .container:after,
+  .navbar:after {
+    clear: both;
+    display: table;
+    content: " ";
+  }
+/*=======================================
+  Contact STYLES
+  =======================================*/
+  .heading-padding {
+    padding-bottom: 40px;
+}
+
+#contact {
+    background-color: #f5f3f3;
+    margin: 0px 60px;
+    border-bottom: 30px solid #f6f6ff;
+    border-radius: 15px;
+    background:linear-gradient(135deg, black, transparent 20%), linear-gradient(300deg,black, transparent 20%), #D1DBBD url('../images/pic_background.jpg') no-repeat center;
+    padding: 20px;
+ 
+}
+
+.reservation {
+    text-align: center;
+	width: 60%;
+	padding: 10px;
+	border-radius: 8px;
+    margin: 0px auto;
+    background-color: blue;
+	/* background-color: rgba(100,65,0,.3); */
+	box-shadow: -1px -1px 1px 0 rgba(0,0,0,0.1), 1px 2px 10px 0 rgba(0,0,0,0.5);
+}
+
+.reservation h2 {
+	width: 70%;
+	text-align: center;
+	margin: 0 auto;
+	color: #13161B;
+	font-weight: 500;
+	font-size: 1em;
+	letter-spacing: 0pt;
+	word-spacing: 0pt;
+}
+
+.reservation h2 span {
+	width: 70%;
+	text-align: center;
+	margin: 0 auto;
+	color: #13161B;
+	font-weight: 900;
+	font-size: 1.5em;
+	font-variant: small-caps;
+	letter-spacing: .4pt;
+	word-spacing: .3pt;
+}
+
+.reservation p {
+	color: #13161B;
+	width: 50%;
+	margin: 0 auto;
+}
+
+.reservation form {
+	font-size: 15px;
+    outline: none;
+    font-weight: 600;
+    color: #8D8E8F;
+    padding: 12px 12px;
+    width: 70%;
+    border: 1px solid #808080;
+    margin: 2% auto;
+    border-radius: 7px;
+    background: rgb(227,222,222);
+    box-shadow: 2px 3px 3px 0px rgba(0, 0, 0, 0.3);
+    font-family: 'Raleway', sans-serif;
+}
+
+.reservation input[type="text"] {
+	font-size: 15px;
+	outline: none;
+	font-weight: 600;
+	color: #8D8E8F;
+	padding: 2% 1% 2% 7%;
+	width: 80%;
+	border-top: 1px solid #090B0D;
+	border-right: 2px solid #424549;
+	border-bottom: 2px solid #424549;
+	border-left: 1px solid #090B0D;
+	margin: 10px 1em;
+	border-radius: 7px;
+	background: #13161B;
+	box-shadow: inset 0px 3px 0px 0px rgba(5, 5, 5, 0.15);
+	font-family: 'Raleway', sans-serif;
+}
+
+.reservation input[type="text"]:hover {
+	box-shadow: 0 0 18px rgba(100,65,0,.8);
+}
+
+.form-spacer {
+	padding: 30px 39px;
+}
+
+.terms {
+	margin: 30px 1px 0 0 ;
+}
+
+.terms {
+	margin-top: 7%;
+	padding-left: 52px;
+	font-size: 20px;
+	line-height: 5px;
+	color: #000;
+	cursor: pointer;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 600;
+}
+
+.terms:hover {
+	color: orange;
+	text-decoration: underline;
+}
+
+.terms {
+	position: relative;
+	display: inline;
+	float: right;
+}
+
+.submit input[type="submit"] {
+	color: rgb(225,225,225);
+	cursor: pointer;
+	border: none;
+	font-weight: 900;
+	outline: none;
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+	margin: 0px 3%;
+	padding: 7px 0px;
+	width: 25%;
+	font-size: 18px;
+	transition: border-color 0.3s color 0.3s background-color 0.3s;
+	border-radius: 7px;
+	background-color: #797a7b;
+	box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.3);
+}
+
+.submit input[type="submit"]:hover {
+	color: #000;
+	background-color: #8D8E8F;
+	box-shadow: inset 1px 2px 15px 0 rgba(0,0,0,0.5);
+}
   
 /*=======================================
   FOOTER STYLES
   =======================================*/
-  /* #footer {
+   #footer {
     background-color: rgba(209,219,189,.3);
     color: #000;
 	text-shadow: 2px 2px 8px 0 (0,0,0,0.4);
     padding: 20px 50px 20px 50px;
     text-align: right;
+    margin-top: 20px;
 }
- */
+ 
 
 
 /* 
