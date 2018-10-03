@@ -1,0 +1,381 @@
+/*==================================================
+    Authour: Henok T.
+    CoffeeShop Website
+====================================================
+    SHARED STYLES
+====================================================*/
+html{
+    font-family: sans-serif;
+    font-size: 62.5%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    overflow-x:hidden
+}
+
+body{
+    margin: 0;
+    font:2em 'Helvetica Neue', Helvetica, Calibri, sans-serif;
+    line-height:1.42857143;
+    background: #3e606f;
+    overflow-x: hidden;
+}
+
+/*=======================================
+  Logo STYLE
+  =======================================*/
+#logo{
+	width: 160px;
+    height: 160px;
+    position: absolute;
+    left:35px;
+    top: 25px;
+    z-index: 1;
+}
+
+.title {
+    color: white;
+    font-size: 2.925rem; 
+}
+
+#homePage{
+    background:linear-gradient(180deg, black, transparent 20%), linear-gradient(360deg,black, transparent 40%), #91AA9D url('../images/pic_background.jpg') no-repeat center;
+    background-size: cover;
+    height: auto;
+    -webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	padding-top: 700px; /* This is spacer before the Main title Logo */
+    padding-bottom:50px;  /*This is spacer after the Main title Logo*/
+    color: #fff;
+    text-align: center;
+    border-bottom: 30px solid #f6f6ff;
+}
+
+
+/*=========================
+Menu Full-page Effect
+===========================*/
+label .menu {  /*Hamburger-Menu main holder*/
+    position: absolute;
+    right: -100px;
+    top: -100px;
+    z-index: 100;
+    width: 200px;
+    height: 200px;
+    background: #193441;;
+    border-radius: 50% 50% 50% 50%;
+    transition: .2s ease-in-out;
+    box-shadow: 0 0 0 0 #91aa9d, 0 0 0 0 #D1DBBD;
+    cursor: pointer;
+    overflow-x:hidden
+}
+label .hamburger {  /*Hamburger-Menu all 3 BARS*/
+    position: absolute;
+    top: 140px;
+    left: 45px;
+    width: 30px;
+    height: 2px;
+    background: #fff;
+    display: block;
+    -webkit-transform-origin: center;
+            transform-origin: center;
+    transition: .2s ease-in-out;
+}
+label .hamburger:after, label .hamburger:before { /*amburger-Menu all top and bottom BARS*/
+    transition: .2s ease-in-out;
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+}
+label .hamburger:before {
+    top: -10px;
+}
+label .hamburger:after {
+    bottom: -10px;
+}
+label input {
+    display: none;
+}
+label input:checked + .menu { /* Hamburger-Menu On-click-effect */
+    box-shadow: 0 0 0 100vw #D2E5ED;
+    border-radius: 0;
+    opacity: 0.5;
+}
+label input:checked + .menu .hamburger {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+}
+label input:checked + .menu .hamburger:after {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    bottom: 0;
+}
+label input:checked + .menu .hamburger:before {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    top: 0;
+}
+label input:checked + .menu + ul {
+    opacity: 1;
+}
+label ul {
+    z-index: 200;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: .3s 0s ease-in-out;
+    list-style: none;
+}
+label a { /* Navigation buttons */
+    margin-bottom: 1em;
+    display: block;
+    position: relative;
+    /* color:white; */
+    text-decoration: none;
+    font:1.6em 'Helvetica Neue', Helvetica, Calibri, sans-serif;
+    text-shadow: 4px 1px 15px rgba(25, 52, 65, 0.5);
+}
+
+
+/*=========================
+Menu Full-page links Effect
+===========================*/
+
+
+.link-scaleup a::before {
+	position: absolute;
+	top: 0;
+	left: -5px;
+	z-index: -1;
+	box-sizing: content-box;
+	padding: 0 5px;
+	width: 100%;
+	height: 100%;
+    border-radius: 50px;
+    color: black;
+	background-color: black;
+	content: '';
+	-webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
+	transition: transform 0.2s, opacity 0.2s;
+	-webkit-transform: scale(0.5);
+	transform: scale(0.5);
+}
+
+.link-scaleup a:hover::before,
+.link-scaleup a:focus::before {
+	opacity: 0.5;
+	-webkit-transform: scale(1.5);
+	transform: scale(1.5);
+}
+
+/*=========================
+======== ABOUT US  ========
+==========================*/
+
+#aboutUs{
+    background:linear-gradient(135deg, black, transparent 80%), linear-gradient(300deg,black, transparent 80%), #D1DBBD url('../images/coffeeCup.jpg') no-repeat center;
+    margin: 60px;
+    padding: 20px;
+}
+#aboutUs_text{
+    color: whitesmoke;
+    font: italic 22px/30px Georgia, serif;
+    margin: 50px;
+    padding: 20px;
+    text-shadow: 4px 1px 15px rgba(2, 7, 10, 1);
+}
+.box-border {
+    border-bottom: 30px solid #f6f6ff;
+    border-radius: 15px;
+  }
+
+.inlineLinks{
+    text-shadow: 4px 1px 15px rgb(8, 1, 1);
+    text-decoration: none;
+    font: italic bold 25px/30px Georgia, serif;
+}
+
+/*=========================
+Links Effect
+===========================*/
+a:link {
+    color: rgb(255, 169, 73);
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: lightblue;
+  }
+  
+  a:hover {
+    color: rgba(255, 169, 73, .4);
+  }
+  
+  a:active {
+    color: lightcoral;
+  }
+
+hr{
+    margin:60px; 
+}
+/*=======================================
+  Menu List SECTION ANIMATION
+  =======================================*/
+#menuList{
+    margin: 0px 60px;
+    text-align: center; 
+}
+/*.container{  Temporarily removed the container div
+    background:linear-gradient(135deg, black, transparent 80%), linear-gradient(300deg,black, transparent 80%), #D1DBBD url('../images/menuListBackground.jpg') no-repeat center; 
+    margin: 20px;
+    padding: 80px;
+    background-color:blue;
+} */
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+	flex-wrap: wrap;
+	border-radius: 15px;
+    /* margin: 10px 10px; */
+    padding: 60px;
+	background:linear-gradient(135deg, black, transparent 80%), linear-gradient(300deg,black, transparent 80%), #D1DBBD url('../images/menuListBackground.jpg') no-repeat center; 
+    /* box-shadow: 2px 2px 10px 0 rgba(236, 236, 8, 1); */
+    border-bottom: 30px solid #f6f6ff;
+}
+  
+.photo {
+	position: relative;
+	line-height: 0;
+	margin-bottom: 6em;
+	overflow: hidden;
+	border-radius: 20px;
+	box-shadow: 0px 0px 20px rgba(247, 247, 214, .6);
+}
+
+.photo-container {
+	text-align: center;
+	margin: 15px auto;
+	width: 300px;
+    height: 169px;
+    /* background-color:blue; */
+}
+
+.photo-container img {
+ 	max-width: 100%;
+	width: 300px;
+    height: 169px;
+    
+}
+
+.photo-overlay {
+	color:#f6f6ff;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0; 
+	left: 0;
+	padding: 40px;
+	justify-content: center; /* For centering text inside .photo-overlay */
+    align-items: center;
+    line-height: 1em;
+    font-size: 18px;
+    font-family: 'Courgette', cursive;
+    text-shadow: 4px 1px 15px rgba(2, 7, 10, 1);
+	background: rgba(25, 14, 55, 0.5);
+}
+
+.coffee-type {
+	color: #f6f6ff;
+    padding: 10px;
+    position: absolute;
+    text-align: justify;
+    font-family: 'Courgette', cursive;
+    text-shadow: 4px 1px 15px rgba(2, 7, 10, 1);
+}
+
+/* ================================= 
+  Photo Overlay Transitions
+==================================== */
+
+.photo-overlay {
+	opacity: 0;
+	transition: opacity .5s;
+	border-radius: 10px;
+	cursor: pointer;
+}
+.photo-overlay:hover {
+	opacity: 1;
+}
+
+.photo img {
+	transition: transform .2s;
+	transform-origin: 50% 50%;
+}
+
+.photo:hover img {
+	transform: scale(2);
+}
+/*=======================================
+  flex-container STYLES
+  =======================================*/
+
+  
+/*=======================================
+  FOOTER STYLES
+  =======================================*/
+  /* #footer {
+    background-color: rgba(209,219,189,.3);
+    color: #000;
+	text-shadow: 2px 2px 8px 0 (0,0,0,0.4);
+    padding: 20px 50px 20px 50px;
+    text-align: right;
+}
+ */
+
+
+/* 
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Open Sans', sans-serif;
+} */
+
+
+/*=======================================
+  ============  @MEDIA QUERIES =========
+  =======================================
+  @media all and (max-width:640px) and (min-width:381px) {
+    .head-main { 
+        font-size: 28px ;
+    }
+}
+@media all and (max-width:381px) and (min-width:200px) {
+    .head-main { 
+        font-size: 24px ;
+    }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+*/
+
