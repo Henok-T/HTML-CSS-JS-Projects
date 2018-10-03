@@ -353,19 +353,21 @@ hr{
     content: " ";
   }
 /*=======================================
-  Contact STYLES
+  OrderForm STYLES
   =======================================*/
   .heading-padding {
     padding-bottom: 40px;
 }
 
-#contact {
+#orderForm {
     background-color: #f5f3f3;
     margin: 0px 60px;
     border-bottom: 30px solid #f6f6ff;
     border-radius: 15px;
     background:linear-gradient(135deg, black, transparent 20%), linear-gradient(300deg,black, transparent 20%), #D1DBBD url('../images/pic_background.jpg') no-repeat center;
     padding: 20px;
+    color: white;  
+    text-align: center; 
  
 }
 
@@ -375,8 +377,7 @@ hr{
 	padding: 10px;
 	border-radius: 8px;
     margin: 0px auto;
-    background-color: blue;
-	/* background-color: rgba(100,65,0,.3); */
+	background-color: rgba(96, 96, 100, 0.3);
 	box-shadow: -1px -1px 1px 0 rgba(0,0,0,0.1), 1px 2px 10px 0 rgba(0,0,0,0.5);
 }
 
@@ -395,18 +396,12 @@ hr{
 	width: 70%;
 	text-align: center;
 	margin: 0 auto;
-	color: #13161B;
+	color: rgb(246, 248, 250);
 	font-weight: 900;
 	font-size: 1.5em;
 	font-variant: small-caps;
 	letter-spacing: .4pt;
 	word-spacing: .3pt;
-}
-
-.reservation p {
-	color: #13161B;
-	width: 50%;
-	margin: 0 auto;
 }
 
 .reservation form {
@@ -522,7 +517,7 @@ h1,h2,h3,h4,h5,h6{
 
 /*=======================================
   ============  @MEDIA QUERIES =========
-  =======================================
+  =======================================*/
   @media all and (max-width:640px) and (min-width:381px) {
     .head-main { 
         font-size: 28px ;
@@ -550,5 +545,5 @@ h1,h2,h3,h4,h5,h6{
   }
 }
 
-*/
+
 
