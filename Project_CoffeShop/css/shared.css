@@ -246,7 +246,7 @@ hr{
 	border-radius: 15px;
     /* margin: 10px 10px; */
     padding: 60px;
-	background:linear-gradient(135deg, black, transparent 80%), linear-gradient(300deg,black, transparent 80%), #D1DBBD url('../images/menuListBackground.jpg') no-repeat center; 
+	background:linear-gradient(135deg, black, transparent 50%), linear-gradient(300deg,black, transparent 50%), #D1DBBD url('../images/menuListBackground.jpg') no-repeat center; 
     /* box-shadow: 2px 2px 10px 0 rgba(236, 236, 8, 1); */
     border-bottom: 30px solid #f6f6ff;
 }
@@ -254,7 +254,8 @@ hr{
 .photo {
 	position: relative;
 	line-height: 0;
-	margin-bottom: 6em;
+    margin-bottom: 6em;
+    margin-right: 1em;
 	overflow: hidden;
 	border-radius: 20px;
 	box-shadow: 0px 0px 20px rgba(247, 247, 214, .6);
@@ -263,14 +264,14 @@ hr{
 .photo-container {
 	text-align: center;
 	margin: 15px auto;
-	width: 300px;
+	width: 350px;
     height: 169px;
     /* background-color:blue; */
 }
 
 .photo-container img {
  	max-width: 100%;
-	width: 300px;
+	width: 350px;
     height: 169px;
     
 }
@@ -327,27 +328,27 @@ hr{
   container STYLES
   =======================================*/
 
-  container {
+.container {
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
   }
   
-  .container-fluid {
+.container-fluid {
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
   }
-  .row {
+.row {
     margin-right: -15px;
     margin-left: -15px;
   }
   
-  .clearfix:after,
-  .container:after,
-  .navbar:after {
+.clearfix:after,
+.container:after,
+.navbar:after {
     clear: both;
     display: table;
     content: " ";
@@ -355,7 +356,7 @@ hr{
 /*=======================================
   OrderForm STYLES
   =======================================*/
-  .heading-padding {
+.heading-padding {
     padding-bottom: 40px;
 }
 
@@ -364,7 +365,7 @@ hr{
     margin: 0px 60px;
     border-bottom: 30px solid #f6f6ff;
     border-radius: 15px;
-    background:linear-gradient(135deg, black, transparent 20%), linear-gradient(300deg,black, transparent 20%), #D1DBBD url('../images/pic_background.jpg') no-repeat center;
+    background:linear-gradient(180deg, black, transparent 40%), linear-gradient(360deg,black, transparent 20%), #D1DBBD url('../images/orderFormBackground.jpg') no-repeat center;
     padding: 20px;
     color: white;  
     text-align: center; 
@@ -385,9 +386,10 @@ hr{
 	width: 70%;
 	text-align: center;
 	margin: 0 auto;
-	color: #13161B;
+	color: rgb(239, 242, 248);
 	font-weight: 500;
-	font-size: 1em;
+    font-size: 1em;
+    font-variant: small-caps;
 	letter-spacing: 0pt;
 	word-spacing: 0pt;
 }
@@ -400,7 +402,7 @@ hr{
 	font-weight: 900;
 	font-size: 1.5em;
 	font-variant: small-caps;
-	letter-spacing: .4pt;
+	letter-spacing: .8pt;
 	word-spacing: .3pt;
 }
 
@@ -408,13 +410,13 @@ hr{
 	font-size: 15px;
     outline: none;
     font-weight: 600;
-    color: #8D8E8F;
+    color: rgb(255, 255, 255);
     padding: 12px 12px;
     width: 70%;
     border: 1px solid #808080;
     margin: 2% auto;
     border-radius: 7px;
-    background: rgb(227,222,222);
+    background: #e9eded;
     box-shadow: 2px 3px 3px 0px rgba(0, 0, 0, 0.3);
     font-family: 'Raleway', sans-serif;
 }
@@ -423,22 +425,16 @@ hr{
 	font-size: 15px;
 	outline: none;
 	font-weight: 600;
-	color: #8D8E8F;
+	color: rgb(10, 2, 2);
 	padding: 2% 1% 2% 7%;
 	width: 80%;
-	border-top: 1px solid #090B0D;
-	border-right: 2px solid #424549;
-	border-bottom: 2px solid #424549;
-	border-left: 1px solid #090B0D;
 	margin: 10px 1em;
 	border-radius: 7px;
-	background: #13161B;
-	box-shadow: inset 0px 3px 0px 0px rgba(5, 5, 5, 0.15);
-	font-family: 'Raleway', sans-serif;
+	background: #f6f6ff;
 }
 
 .reservation input[type="text"]:hover {
-	box-shadow: 0 0 18px rgba(100,65,0,.8);
+	box-shadow: 0 0 38px rgba(44, 42, 42, 0.281);
 }
 
 .form-spacer {
@@ -450,9 +446,9 @@ hr{
 }
 
 .terms {
-	margin-top: 7%;
+	margin-top: 11%;
 	padding-left: 52px;
-	font-size: 20px;
+	font-size: 10px;
 	line-height: 5px;
 	color: #000;
 	cursor: pointer;
@@ -491,7 +487,7 @@ hr{
 
 .submit input[type="submit"]:hover {
 	color: #000;
-	background-color: #8D8E8F;
+	background-color: rgb(74, 158, 241);
 	box-shadow: inset 1px 2px 15px 0 rgba(0,0,0,0.5);
 }
   
