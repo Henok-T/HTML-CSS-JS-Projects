@@ -11,6 +11,7 @@ html{
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
     overflow-x:hidden
+    scroll-behavior: smooth;
    
 }
 
@@ -20,7 +21,7 @@ body{
     line-height:1.42857143;
     background: #e9eded;
     overflow-x: hidden;
-    scroll-behavior: smooth;
+    
 }
 
 /*=======================================
@@ -104,9 +105,9 @@ label input {
     display: none;
 }
 label input:checked + .menu { /* Hamburger-Menu On-click-effect */
-    box-shadow: 0 0 0 100vw #D2E5ED;
+    box-shadow: 0 0 0 100vw #e8f5fa;
     border-radius: 0;
-    opacity: 0.5;
+    opacity: 0.6;
 }
 label input:checked + .menu .hamburger {
     -webkit-transform: rotate(45deg);
@@ -124,6 +125,7 @@ label input:checked + .menu .hamburger:before {
 }
 label input:checked + .menu + ul {
     opacity: 1;
+    
 }
 label ul {
     z-index: 200;
