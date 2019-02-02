@@ -47,7 +47,6 @@ a:hover {
     margin: 10% 10% 10% 5%;
     /* background-color: lightblue; */
     background: url('../images/loginback.jpg') no-repeat center;
-
 }
 
 .form_header {
@@ -113,9 +112,7 @@ input[type="password"]:focus {
     margin: 0 0 0 30%;
 }
 
-/*=====================================
-============== screen size 500px or larger ===========>>>
-======================================*/
+/*==========screen size 500px or larger ===========*/
 @media (max-width: 500px) {
     .login {
         width: 280px;
