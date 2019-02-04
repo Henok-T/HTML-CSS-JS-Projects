@@ -24,7 +24,7 @@ a,
 a:active,
 a:link,
 a:visited {
-    color: black;
+    color: red;
     font-size: 14px;
     text-decoration: none;
 }
