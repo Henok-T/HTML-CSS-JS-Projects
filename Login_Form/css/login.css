@@ -92,7 +92,7 @@ input[type="password"]:focus {
 }
 
 .btn:hover {
-    color: #000;
+    color: #ef0b0b;
     background-color: #dedee0;
     box-shadow: inset 0 0 5px #000;
 }
